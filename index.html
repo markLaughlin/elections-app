@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>2020 Presidential Candidates Information</title>
+    <meta name="description" content="An asynchronous web application">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header role="banner">
+          <h1 id="headline">Get Ready for 2020!</h1>
+      </header>
+
+      <form id="formOne">
+
+        <fieldset>
+        
+        <legend>
+        Let's find some information about the candidates for the 2020 Presidential Election...
+        </legend>
+
+        <a id="ballotLink" href="https://ballotpedia.org/Presidential_candidates,_2020" target="_blank">Click to see a current list of candidates</a>
+
+        <p></p>
+        
+        <label for="inputOne">
+        Enter the name of your candidate:
+        <input id = "inputOne"  type="text" required>
+        </label>
+
+        <p></p>
+        
+        <label for="submitButton">
+        <input id="submitButton" type="submit" value="Send">
+        </label>
+
+        </fieldset>
+    </form>
+
+    <p id="displayAreaOne"></p>
+
+    <div id="imageContainer">
+    <img src="seal.png" alt="Presidential Seal" height="200" width="200">
+    </div>
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+  <body>

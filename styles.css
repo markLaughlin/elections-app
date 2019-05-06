@@ -1,0 +1,86 @@
+body {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    line-height: 22px;
+    background-color: #a4893d;
+}
+
+#headline {
+    color: white;
+    font-size: 48px; 
+    line-height: 58px;
+}
+
+fieldset {
+    border: none;
+}
+
+
+#submitButton {
+    font-size: 20px;
+    background-color: #ff3a22;
+    color: white;
+    border: none;
+    padding: 2px 28px;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+#submitButton:focus {
+    outline: none;
+}
+
+#outerContainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;  
+}
+
+#imageContainer {
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#containerOne, #containerTwo, #containerThree {
+    padding: 10px;
+    margin: 1%;
+    background-color: white;
+    color: black;
+   
+}
+
+#error, #anotherNotice, #ballotLink {
+    color: white;
+}
+
+a {
+    color: #ff3a22;
+}
+
+@media screen and (min-width: 800px) {
+    #containerOne, #containerTwo, #containerThree{
+        width: 33.3%;
+    }
+
+    #outerContainer {
+        flex-direction: row;  
+    }  
+}
+
