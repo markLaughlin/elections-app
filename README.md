@@ -1,5 +1,5 @@
 Live:
-https://marklaughlin.github.io/candidates-app/
+https://marklaughlin.github.io/elections-app/
 
 This app allows the user to enter the name of a political candidate in the 2020 United States presidential election and then get information back about that candidate.
 
