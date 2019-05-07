@@ -35,7 +35,7 @@ function firstBlock(){
         name = $("#inputOne").val();        
         getInfo(name);
         $("#inputOne").focus();
-
+        $("#inputOne").val("");
     });
 }
 
@@ -201,7 +201,7 @@ function display(name, cash, news, bio, bLink){
     <p></p>
     `
     $("#displayAreaOne").prepend(results);
-    $("#inputOne").val("");
+    // $("#inputOne").val("");
 }
 
 function errorNotice(){
@@ -213,7 +213,7 @@ function errorNotice(){
     </p>
     `
     $("#displayAreaOne").prepend(errorDisplay);
-    $("#inputOne").val("");
+    // $("#inputOne").val("");
 }
 
 $(firstBlock)
