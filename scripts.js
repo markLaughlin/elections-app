@@ -32,8 +32,10 @@ function firstBlock(){
         $("#displayAreaOne").empty();
 
 
-        name = $("#inputOne").val();
+        name = $("#inputOne").val();        
         getInfo(name);
+        $("#inputOne").focus();
+
     });
 }
 
@@ -155,20 +157,6 @@ function getBio(r){
     display(name, cash, news, bio, bLink);
 }
 
-function errorNotice(){
-    console.log("1B: function errorNotice ran");
-    let errorDisplay =
-    `
-    <p id="error">
-    Something went wrong! Check spelling and try different versions of first name (Example: "Joseph Biden" instead of "Joe Biden"). Maybe the candidate isn't registered with the FEC yet. Try again!
-    </p>
-    `
-    $("#displayAreaOne").prepend(errorDisplay);
-    $("#inputOne").val("");
-    $("#inputOne").focus();
-
-}
-
 function display(name, cash, news, bio, bLink){
 
     console.log("14: display function ran");
@@ -214,8 +202,18 @@ function display(name, cash, news, bio, bLink){
     `
     $("#displayAreaOne").prepend(results);
     $("#inputOne").val("");
-    $("#inputOne").focus();
+}
 
+function errorNotice(){
+    console.log("1B: function errorNotice ran");
+    let errorDisplay =
+    `
+    <p id="error">
+    Something went wrong! Check spelling and try different versions of first name (Example: "Joseph Biden" instead of "Joe Biden"). Maybe the candidate isn't registered with the FEC yet. Try again!
+    </p>
+    `
+    $("#displayAreaOne").prepend(errorDisplay);
+    $("#inputOne").val("");
 }
 
 $(firstBlock)
