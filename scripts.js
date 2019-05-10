@@ -180,7 +180,7 @@ function display(name, cash, news, bio, bLink){
 
         <div id="containerOne">
             <strong>Campaign Cash</strong>
-            Enter another candidate name above!
+            
             <p>Presidential candidate ${name} has the following amount of cash on hand for their campaign (as registered with the FEC):</p>
             
             <p><strong>$${cash}</strong></p>
